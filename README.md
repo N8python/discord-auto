@@ -5,7 +5,7 @@ Minimal Chrome extension that translates visible Discord text with an LM Studio 
 ## Load it
 
 1. Start LM Studio's local server at `http://127.0.0.1:1234`.
-2. Load `google/gemma-4-26b-a4b`.
+2. Load `google/gemma-4-26b-a4b` (Or any OpenAI-compatible model) in LM Studio. Note that the app has been tested with `gemma-4-26b-a4b` and may require prompt adjustments for other models.
 3. Open Chrome Extensions: `chrome://extensions`.
 4. Enable Developer mode.
 5. Click Load unpacked and choose this folder.
