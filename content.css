@@ -1,0 +1,14 @@
+.dat-translation-pending {
+  opacity: 0.72;
+}
+
+.dat-translated {
+  opacity: 1;
+}
+
+.dat-translation-error {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(242, 63, 66);
+  text-underline-offset: 2px;
+}

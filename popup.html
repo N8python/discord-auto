@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discord Auto Translate</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <img src="icons/icon48.png" alt="">
+          </div>
+          <div>
+            <h1>Discord Translate</h1>
+            <p>LM Studio</p>
+          </div>
+        </div>
+        <label class="toggle">
+          <input id="enabled" type="checkbox">
+          <span>Enabled</span>
+        </label>
+      </header>
+
+      <section aria-label="Translation settings">
+        <label>
+          Source language
+          <input id="sourceLanguage" type="text" placeholder="Spanish, Japanese, Chinese">
+        </label>
+
+        <label>
+          Target language
+          <input id="targetLanguage" type="text" placeholder="English, Spanish, Japanese">
+        </label>
+
+        <label>
+          Concurrent requests
+          <input id="concurrency" type="number" min="1" max="12" step="1">
+        </label>
+      </section>
+
+      <section aria-label="LM Studio settings">
+        <label>
+          LM Studio URL
+          <input id="lmStudioUrl" type="url" placeholder="http://127.0.0.1:1234">
+        </label>
+
+        <label>
+          Model
+          <input id="model" type="text" placeholder="google/gemma-4-26b-a4b">
+        </label>
+      </section>
+
+      <p id="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
